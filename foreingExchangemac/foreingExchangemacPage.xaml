@@ -6,9 +6,52 @@
 	<Label 
     Text="Welcome to Xamarin Forms!" 
     VerticalOptions="Center" HorizontalOptions="Center"/>
-    <StackLayout>
+    <StackLayout
+        Padding = "10,30,10,10">
         <Label
-            Text="foreing Exchange">
+            HorizontalOptions="Center"
+            FontSize="Large"
+            Text="Foreing Exchange">
         </Label>
+        <Label
+            Text="Pesos">
+        </Label>
+        <Entry
+            x:Name="PesosEntry"
+            Keyboard="Numeric"
+            PlaceholderColor="Black"
+            Placeholder = "Enter the amount in pesos...">
+        </Entry>
+        <Button
+            x:Name="ConvertButton"
+            Text="Convert">
+        </Button>
+        <Label
+            Text="Dollars">
+        </Label>
+        <Entry
+            x:Name="DollarsEntry"
+            IsEnabled="false"
+            PlaceholderColor="Black"
+            Placeholder = "Value in dollars...">
+        </Entry>
+        <Label
+            Text="Euros">
+        </Label>
+        <Entry
+            x:Name="EurosEntry"
+            IsEnabled="false"
+            PlaceholderColor="Black"
+            Placeholder = "Value in Euros...">
+        </Entry>
+        <Label
+            Text="Pounds">
+        </Label>
+        <Entry
+            x:Name="PoundsEntry"
+            IsEnabled="false"
+            PlaceholderColor="Black"
+            Placeholder = "Value in Pounds...">
+        </Entry>
     </StackLayout>
 </ContentPage>
